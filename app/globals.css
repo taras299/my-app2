@@ -2,26 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: 222 47% 4%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 4%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 4%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 183 100% 50%;
+    --primary-foreground: 222 47% 4%;
+
+    --secondary: 223 47% 11%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 223 47% 11%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 223 47% 11%;
+    --input: 223 47% 11%;
+    --ring: 183 100% 50%;
+
+    --radius: 0.5rem;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
+
+.bg-navy {
+  background-color: #020a1f;
+}
+
+.text-cyan {
+  color: #00eeff;
+}
+
+.bg-cyan {
+  background-color: #00eeff;
+}
+
+.price-card {
+  background-color: rgba(1, 15, 38, 0.5);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.room-card {
+  background-color: rgba(1, 15, 38, 0.5);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.checkmark::before {
+  content: "✓";
+  display: inline-block;
+  margin-right: 0.5rem;
+  color: #00eeff;
+}
+
+/* Добавим стили для select элементов */
+select {
+  @apply bg-navy text-white border border-white/10 rounded-md p-3;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='white'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+}
+
+select option {
+  @apply bg-navy text-white;
+}
+
+/* Стили для состояния фокуса */
+select:focus {
+  @apply outline-none ring-2 ring-primary;
+}
+
