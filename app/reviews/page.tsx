@@ -21,13 +21,13 @@ export default function ReviewsPage() {
                   <label className="block text-sm font-medium mb-2">Имя</label>
                   <input
                     type="text"
-                    className="w-full bg-navy/80 border border-white/10 rounded-md p-3 text-white"
+                    className="w-full bg-white text-black border border-white/10 rounded-md p-3"
                     placeholder="Ваше имя"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-2">Оценка</label>
-                  <select className="w-full bg-navy/80 border border-white/10 rounded-md p-3 text-white">
+                  <select className="w-full bg-white text-black border border-white/10 rounded-md p-3">
                     <option value="5">5 звезд</option>
                     <option value="4">4 звезды</option>
                     <option value="3">3 звезды</option>
@@ -39,7 +39,7 @@ export default function ReviewsPage() {
               <div>
                 <label className="block text-sm font-medium mb-2">Ваш отзыв</label>
                 <textarea
-                  className="w-full bg-navy/80 border border-white/10 rounded-md p-3 text-white min-h-32"
+                  className="w-full bg-white text-black border border-white/10 rounded-md p-3 min-h-32"
                   placeholder="Поделитесь своими впечатлениями..."
                 />
               </div>
@@ -55,4 +55,3 @@ export default function ReviewsPage() {
     </section>
   )
 }
-

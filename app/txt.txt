@@ -1,0 +1,33 @@
+ <select
+                    name="city"
+                    value={formData.city}
+                    onChange={handleChange}
+                    className="w-full bg-navy/80 border border-white/10 rounded-md p-3 text-white"
+                    required
+                  >
+                    <option value="">Выберите город</option>
+                    <option value="almaty">Алматы</option>
+                    <option value="nursultan">Нур-Султан</option>
+                    <option value="shymkent">Шымкент</option>
+                    <option value="alma_ata">Алма-Ата (Алматы)</option>
+                    <option value="astana">Астана</option>
+                    <option value="aktobe">Актобе</option>
+                    <option value="karaganda">Караганда</option>
+                    <option value="taraz">Тараз</option>
+                    <option value="ust_kamenogorsk">Усть-Каменогорск</option>
+                    <option value="pavlodar">Павлодар</option>
+                    <option value="atyrau">Атырау</option>
+                    <option value="semey">Семей</option>
+                    <option value="aktau">Актау</option>
+                    <option value="kyzylorda">Кызылорда</option>
+                    <option value="kostanay">Костанай</option>
+                    <option value="uralsk">Уральск</option>
+                    <option value="turkestan">Туркестан</option>
+                    <option value="petropavlovsk">Петропавловск</option>
+                    <option value="kokshetau">Кокшетау</option>
+                    <option value="temirtau">Темиртау</option>
+                    <option value="taldykorgan">Талдыкорган</option>
+                    <option value="ekibastuz">Экибастуз</option>
+                    <option value="rudny">Рудный</option>
+                    <option value="zhezkazgan">Жезказган</option>
+                  </select>

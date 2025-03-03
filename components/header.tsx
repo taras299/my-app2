@@ -16,6 +16,7 @@ export function Header() {
     { href: "/faq", label: "FAQ Информация" },
     { href: "/reviews", label: "Отзывы" },
     { href: "/contacts", label: "Контакты" },
+    { href: "/cities", label: "Города" }, // Added Cities button
   ]
 
   return (
@@ -47,7 +48,7 @@ export function Header() {
           </div>
           <Link
             href="/booking"
-            className="inline-flex h-10 items-center justify-center rounded-md bg-cyan px-6 text-sm font-medium text-navy shadow transition-colors hover:bg-cyan/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+            className="inline-flex h-10 items-center justify-center rounded-md bg-cyan px-6 text-sm font-medium text-navy shadow transition-colors hover:bg-cyan/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cyan-500"
           >
             ЗАБРОНИРОВАТЬ
           </Link>
@@ -77,7 +78,7 @@ export function Header() {
             ))}
             <Link
               href="/booking"
-              className="inline-flex h-10 items-center justify-center rounded-md bg-cyan w-full px-4 text-sm font-medium text-navy shadow transition-colors hover:bg-cyan/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+              className="inline-flex h-10 items-center justify-center rounded-md bg-cyan w-full px-4 text-sm font-medium text-navy shadow transition-colors hover:bg-cyan/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-cyan-500"
               onClick={() => setMobileMenuOpen(false)}
             >
               ЗАБРОНИРОВАТЬ
@@ -88,4 +89,3 @@ export function Header() {
     </header>
   )
 }
-

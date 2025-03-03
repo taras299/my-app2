@@ -68,7 +68,7 @@ export default function ContactsPage() {
                   <label className="block text-sm font-medium mb-2">Имя</label>
                   <input
                     type="text"
-                    className="w-full bg-navy/80 border border-white/10 rounded-md p-3 text-white"
+                    className="w-full bg-white text-black border border-white/10 rounded-md p-3"
                     placeholder="Ваше имя"
                   />
                 </div>
@@ -76,14 +76,14 @@ export default function ContactsPage() {
                   <label className="block text-sm font-medium mb-2">Email</label>
                   <input
                     type="email"
-                    className="w-full bg-navy/80 border border-white/10 rounded-md p-3 text-white"
+                    className="w-full bg-white text-black border border-white/10 rounded-md p-3"
                     placeholder="Ваш email"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium mb-2">Сообщение</label>
                   <textarea
-                    className="w-full bg-navy/80 border border-white/10 rounded-md p-3 text-white min-h-32"
+                    className="w-full bg-white text-black border border-white/10 rounded-md p-3 min-h-32"
                     placeholder="Текст сообщения..."
                   />
                 </div>
@@ -107,4 +107,3 @@ export default function ContactsPage() {
     </section>
   )
 }
-
